@@ -17,7 +17,7 @@ public class test extends HttpServlet {
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         System.out.println("1111");
         Map<String,Object> map=new HashMap<String, Object>();
-        map.put("test","test");
+        map.put("test","tests");
         String json=JSON.toJSONString(map);
         PrintWriter out=resp.getWriter();
         out.print(json);
